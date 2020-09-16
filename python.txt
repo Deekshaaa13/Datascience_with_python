@@ -1,0 +1,19 @@
+#install and then import matplotlib
+import matplotlib.pyplot as plt
+x = [-3, 5, 7]
+y = [10, 2, 5]
+y
+fig = plt.figure(figsize=(15,3))
+
+plt.plot(x, y)
+plt.xlim(-4, 10)
+plt.ylim(0, 12)
+plt.xlabel('X Axis')
+plt.ylabel('Y axis')
+plt.title('Line Plot')
+plt.suptitle('Sales Comaprison', size=20, y=1.03)
+fig.get_size_inches()
+fig.set_size_inches(14, 4)
+fig
+fig, axs = plt.subplots(nrows=1, ncols=1)
+fig, axs = plt.subplots(2, 4)
